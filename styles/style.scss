@@ -1,0 +1,132 @@
+@import "./normalize";
+
+// <Vars >
+$primary-color: #191919;
+$dark-color: #000000;
+$light-color: #ffffff;
+$orange-color: #f7b516;
+// <Vars />
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+// <Utilities >
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+// <Utilities />
+
+// <Header>
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // <nav>
+  &_nav {
+    background-color: $primary-color;
+    color: $light-color;
+    &_inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 0;
+      &_logo {
+        display: flex;
+        align-items: center;
+        img {
+          height: 50%;
+        }
+        img:first-child {
+          margin-right: 1rem;
+        }
+      }
+      &_time {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+      &_call {
+        display: flex;
+        align-content: baseline;
+        height: 100%;
+        &_phones {
+          font-size: 18px;
+          line-height: 21.6px;
+          font-weight: 900;
+          margin-right: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        &_button {
+          display: flex;
+          align-items: center;
+          button {
+            border: none;
+            background: linear-gradient(to right, #1c62ac, #273588);
+            color: $light-color;
+            padding: 1rem 2rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    // <nav />
+  }
+  // <showcase>
+  .showcase {
+    background-image: url("../images/showcase.png");
+    background-size: 100% 100%;
+    height: 100%;
+    .showcase_inner {
+      display: flex;
+      height: 100%;
+      &_content {
+        background-color: $orange-color;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: $dark-color;
+        flex-basis: 50%;
+        padding: 4rem;
+        &_title {
+          font-weight: 700;
+          line-height: 55px;
+          font-size: 2.5rem;
+          padding-bottom: 2.875rem;
+        }
+        &_subtitle {
+          line-height: 30px;
+          font-size: 1.5rem;
+          padding-bottom: 5.75rem;
+        }
+        &_advantages {
+          &_advantage {
+            display: flex;
+            align-items: center;
+            padding-bottom: 2rem;
+            font-size: 18px;
+            line-height: 21.6px;
+            &_ico {
+              margin-right: 2rem;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              img {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // <showcase />
+}
+// <Header />
