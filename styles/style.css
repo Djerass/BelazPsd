@@ -473,6 +473,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
   color: #000000;
   -ms-flex-preferred-size: 50%;
@@ -484,13 +487,11 @@ body {
   font-weight: 700;
   line-height: 55px;
   font-size: 2.5rem;
-  padding-bottom: 2.875rem;
 }
 
 .header .showcase .showcase_inner_content_subtitle {
   line-height: 30px;
   font-size: 1.5rem;
-  padding-bottom: 5.75rem;
 }
 
 .header .showcase .showcase_inner_content_advantages_advantage {
@@ -516,5 +517,98 @@ body {
 
 .header .showcase .showcase_inner_content_advantages_advantage_ico img {
   height: 100%;
+}
+
+.getPrice {
+  background-image: url("../images/getPrice.png");
+  background-size: 100% 100%;
+  text-align: right;
+}
+
+.getPrice_inner {
+  height: 100%;
+  padding: 100px 0;
+}
+
+.getPrice_inner_title {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.getPrice_inner_form_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+
+.getPrice_inner_form_inputs_input {
+  -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
+  position: relative;
+}
+
+.getPrice_inner_form_inputs_input:first-child {
+  margin-right: 30px;
+}
+
+.getPrice_inner_form_inputs_input_icon {
+  position: absolute;
+  right: 2rem;
+  top: 38%;
+}
+
+.getPrice_inner_form_inputs_input input {
+  width: 100%;
+  padding: 30px 25px;
+  background: #f2f2f2;
+  color: #818181;
+  border: none;
+  font-size: 13px;
+}
+
+.getPrice_inner_form_submit_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.getPrice_inner_form_submit_wrapper_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.getPrice_inner_form_submit_wrapper_time_label {
+  margin-right: 30px;
+}
+
+.getPrice_inner_form_submit_wrapper_btn {
+  -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
+}
+
+.getPrice_inner_form_submit_wrapper_btn button {
+  width: 100%;
+  padding: 30px 100px;
+  border: none;
+  background-color: #1866af;
+  color: #ffffff;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

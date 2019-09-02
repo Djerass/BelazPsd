@@ -91,6 +91,7 @@ body {
         background-color: $orange-color;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         height: 100%;
         color: $dark-color;
         flex-basis: 50%;
@@ -99,12 +100,10 @@ body {
           font-weight: 700;
           line-height: 55px;
           font-size: 2.5rem;
-          padding-bottom: 2.875rem;
         }
         &_subtitle {
           line-height: 30px;
           font-size: 1.5rem;
-          padding-bottom: 5.75rem;
         }
         &_advantages {
           &_advantage {
@@ -130,3 +129,75 @@ body {
   // <showcase />
 }
 // <Header />
+
+// < getPrice >
+.getPrice {
+  background-image: url("../images/getPrice.png");
+  background-size: 100% 100%;
+  text-align: right;
+  &_inner {
+    height: 100%;
+    padding: 100px 0;
+    &_title {
+      font-size: 2rem;
+      line-height: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    &_form {
+      &_inputs {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1.5rem;
+        &_input {
+          flex-basis: 370px;
+          position: relative;
+          &:first-child {
+            margin-right: 30px;
+          }
+          &_icon {
+            position: absolute;
+            right: 2rem;
+            top: 38%;
+            img {
+            }
+          }
+          input {
+            width: 100%;
+            padding: 30px 25px;
+            background: #f2f2f2;
+            color: #818181;
+            border: none;
+            font-size: 13px;
+          }
+        }
+      }
+      &_submit_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &_time {
+          display: flex;
+          flex-basis: 370px;
+          margin-right: 30px;
+          font-size: 14px;
+          line-height: 20px;
+          &_label {
+            margin-right: 30px;
+          }
+        }
+        &_btn {
+          flex-basis: 370px;
+          button {
+            width: 100%;
+            padding: 30px 100px;
+            border: none;
+            background-color: #1866af;
+            color: $light-color;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// < getPrice />
