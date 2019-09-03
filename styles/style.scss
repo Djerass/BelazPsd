@@ -201,3 +201,113 @@ body {
   }
 }
 // < getPrice />
+
+// < Wait>
+.wait {
+  background-color: #08243e;
+  color: #ffffff;
+  text-align: center;
+  padding: 85px;
+  &_inner {
+    &_title {
+      font-size: 36px;
+      line-height: 43.2px;
+    }
+    &_subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 1rem;
+      padding-bottom: 100px;
+    }
+    &_boxes {
+      display: flex;
+      align-items: baseline;
+      &_box {
+        flex: 1;
+        flex-basis: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_icon {
+          display: flex;
+          justify-content: center;
+          img {
+          }
+        }
+        &_desc {
+          font-size: 18px;
+          line-height: 21.6px;
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+}
+// < Wait />
+
+// < Seek >
+.seek {
+  background-image: url("../images/seek.png");
+  background-size: 100% 100%;
+  color: #ffffff;
+  text-align: center;
+  &_inner {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    &_title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    &_subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+    &_formContainer {
+      &_form {
+        display: flex;
+        justify-content: space-between;
+        &_field {
+          flex: 1;
+          &:nth-child(2n) {
+            margin: 0 30px;
+          }
+          input {
+            padding: 30px 25px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #818181;
+            font-size: 13px;
+            line-height: 1rem;
+          }
+          button {
+            width: 100%;
+            padding: 30px 25px;
+            color: #ffffff;
+            background-color: $orange-color;
+            border: none;
+          }
+        }
+      }
+    }
+    &_info {
+      padding-top: 54px;
+      font-size: 14px;
+      line-height: 1rem;
+    }
+    &_propose {
+      font-size: 14px;
+      padding-top: 0.5rem;
+      line-height: 1rem;
+    }
+    &_phone {
+      font-size: 30px;
+      line-height: 36px;
+      padding-top: 1rem;
+    }
+  }
+}
+// < Seek />
