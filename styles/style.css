@@ -784,4 +784,62 @@ body {
 .guarantee_inner_items_item_desc {
   padding: 2rem 0;
 }
+
+.discounts {
+  background-color: #08243e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.discounts_inner {
+  padding-top: 90px;
+  padding-bottom: 55px;
+}
+
+.discounts_inner_title {
+  font-size: 36px;
+  line-height: 43.2px;
+  padding-bottom: 90px;
+}
+
+.discounts_inner_proposes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discounts_inner_proposes_propose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discounts_inner_proposes_propose_value {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.discounts_inner_proposes_propose_desc {
+  width: 90%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
