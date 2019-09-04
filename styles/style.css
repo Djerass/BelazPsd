@@ -953,4 +953,37 @@ body {
   bottom: 0;
   z-index: 1111;
 }
+
+.comfort_inner {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.comfort_inner_title {
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.comfort_inner_subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.comfort_inner_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comfort_inner_items_item_desc {
+  padding-top: 40px;
+  max-width: 55%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
