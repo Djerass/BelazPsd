@@ -986,4 +986,59 @@ body {
   max-width: 55%;
   margin: 0 auto;
 }
+
+.warehouse {
+  background-color: #0b3554;
+  color: #ffffff;
+  text-align: center;
+}
+
+.warehouse_inner {
+  padding-bottom: 100px;
+  padding-top: 85px;
+}
+
+.warehouse_inner_title {
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.warehouse_inner_subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 75px;
+  padding-top: 20px;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+.warehouse_inner_slider_wrapper {
+  position: relative;
+}
+
+.warehouse_inner_slider_wrapper_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warehouse_inner_slider_wrapper_images_image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.warehouse_inner_slider_wrapper_arrow_left {
+  position: absolute;
+  left: 15px;
+  top: 45%;
+  cursor: pointer;
+}
+
+.warehouse_inner_slider_wrapper_arrow_right {
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
