@@ -1041,4 +1041,66 @@ body {
   top: 45%;
   cursor: pointer;
 }
+
+.service {
+  text-align: center;
+}
+
+.service_inner {
+  padding-bottom: 100px;
+  padding-top: 85px;
+}
+
+.service_inner_title {
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.service_inner_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px;
+}
+
+.service_inner_items_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service_inner_items_item_icon {
+  border: 5px solid #f7b516;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 33px;
+}
+
+.service_inner_items_item_desc {
+  font-size: 18px;
+  line-height: 21.6px;
+}
 /*# sourceMappingURL=style.css.map */
