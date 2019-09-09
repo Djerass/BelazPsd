@@ -1103,4 +1103,76 @@ body {
   font-size: 18px;
   line-height: 21.6px;
 }
+
+.consult {
+  background-image: url("../images/service.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.consult_inner {
+  padding-bottom: 100px;
+  padding-top: 85px;
+}
+
+.consult_inner_title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.consult_inner_message {
+  padding-top: 55px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.consult_inner_phone {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.consult_inner_wrapper {
+  padding-top: 55px;
+}
+
+.consult_inner_wrapper_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.consult_inner_wrapper_form_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 370px;
+}
+
+.consult_inner_wrapper_form_item input,
+.consult_inner_wrapper_form_item button {
+  width: 100%;
+  padding: 30px 25px;
+}
+
+.consult_inner_wrapper_form_item input {
+  color: #818181;
+  font-size: 13px;
+  line-height: 15.6px;
+}
+
+.consult_inner_wrapper_form_item button {
+  color: #ffffff;
+  background-color: #f7b516;
+  height: 100%;
+  border: none;
+}
+
+.consult_inner_wrapper_form_item:first-child {
+  margin-right: 30px;
+}
 /*# sourceMappingURL=style.css.map */
