@@ -1175,4 +1175,81 @@ body {
 .consult_inner_wrapper_form_item:first-child {
   margin-right: 30px;
 }
+
+.come {
+  background-image: url("../images/come.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #000000;
+  text-align: center;
+}
+
+.come_inner {
+  padding-bottom: 100px;
+  padding-top: 85px;
+}
+
+.come_inner_title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.come_inner_adress {
+  padding-top: 55px;
+  padding-bottom: 23px;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.come_inner_phone {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.map_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map_wrapper img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer_inner {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer_inner_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_inner_logo img:first-child {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=style.css.map */
