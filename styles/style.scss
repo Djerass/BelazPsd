@@ -664,12 +664,8 @@ body {
 // < MAP >
 .map {
   &_wrapper {
-    display: flex;
-    img {
-      flex: 1;
-      height: 375px;
-      padding: 0;
-      margin: 0;
+    iframe {
+      border: none;
     }
   }
 }
