@@ -355,6 +355,21 @@ body {
   margin: 0 auto;
 }
 
+.outer {
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .header {
   height: 100vh;
   display: -webkit-box;
@@ -527,12 +542,9 @@ body {
 
 .getPrice_inner {
   height: 100%;
-  padding: 100px 0;
 }
 
 .getPrice_inner_title {
-  font-size: 2rem;
-  line-height: 2rem;
   padding-bottom: 1.5rem;
 }
 
@@ -616,17 +628,9 @@ body {
   background-color: #08243e;
   color: #ffffff;
   text-align: center;
-  padding: 85px;
-}
-
-.wait_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
 }
 
 .wait_inner_subtitle {
-  font-size: 20px;
-  line-height: 24px;
   padding-top: 1rem;
   padding-bottom: 100px;
 }
@@ -680,19 +684,7 @@ body {
   text-align: center;
 }
 
-.seek_inner {
-  padding-top: 100px;
-  padding-bottom: 60px;
-}
-
-.seek_inner_title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
 .seek_inner_subtitle {
-  font-size: 20px;
-  line-height: 24px;
   padding-top: 1rem;
   padding-bottom: 2rem;
   max-width: 60%;
@@ -757,13 +749,7 @@ body {
   text-align: center;
 }
 
-.guarantee_inner {
-  padding: 100px;
-}
-
 .guarantee_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
   padding-bottom: 100px;
 }
 
@@ -791,14 +777,7 @@ body {
   text-align: center;
 }
 
-.discounts_inner {
-  padding-top: 90px;
-  padding-bottom: 55px;
-}
-
 .discounts_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
   padding-bottom: 90px;
   width: 70%;
   margin: 0 auto;
@@ -851,19 +830,7 @@ body {
   text-align: center;
 }
 
-.questions_inner {
-  padding-top: 85px;
-  padding-bottom: 100px;
-}
-
-.questions_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
-}
-
 .questions_inner_subtitle {
-  font-size: 20px;
-  line-height: 24px;
   padding-top: 20px;
   padding-bottom: 70px;
 }
@@ -955,19 +922,10 @@ body {
 }
 
 .comfort_inner {
-  padding-top: 85px;
-  padding-bottom: 100px;
   text-align: center;
 }
 
-.comfort_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
-}
-
 .comfort_inner_subtitle {
-  font-size: 20px;
-  line-height: 24px;
   padding-top: 20px;
   padding-bottom: 70px;
 }
@@ -993,19 +951,7 @@ body {
   text-align: center;
 }
 
-.warehouse_inner {
-  padding-bottom: 100px;
-  padding-top: 85px;
-}
-
-.warehouse_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
-}
-
 .warehouse_inner_subtitle {
-  font-size: 20px;
-  line-height: 24px;
   padding-bottom: 75px;
   padding-top: 20px;
   max-width: 65%;
@@ -1044,16 +990,6 @@ body {
 
 .service {
   text-align: center;
-}
-
-.service_inner {
-  padding-bottom: 100px;
-  padding-top: 85px;
-}
-
-.service_inner_title {
-  font-size: 36px;
-  line-height: 43.2px;
 }
 
 .service_inner_items {
@@ -1110,16 +1046,6 @@ body {
   background-size: 100% 100%;
   color: #ffffff;
   text-align: center;
-}
-
-.consult_inner {
-  padding-bottom: 100px;
-  padding-top: 85px;
-}
-
-.consult_inner_title {
-  font-size: 30px;
-  line-height: 36px;
 }
 
 .consult_inner_message {
@@ -1182,16 +1108,6 @@ body {
   background-size: 100% 100%;
   color: #000000;
   text-align: center;
-}
-
-.come_inner {
-  padding-bottom: 100px;
-  padding-top: 85px;
-}
-
-.come_inner_title {
-  font-size: 30px;
-  line-height: 36px;
 }
 
 .come_inner_adress {
