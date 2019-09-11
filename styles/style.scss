@@ -10,6 +10,19 @@ $grey-color: #f2f2f2;
 $dark-grey-color: #818181;
 $blue-color: #0b3554;
 $dark-blue-color: #08243e;
+
+// Small devices (landscape phones, 576px and up)
+$sm: 576px;
+$sm-max: 767px;
+// Medium devices (tablets, 768px and up)
+$md: 768px;
+$md-max: 991px;
+// Large devices (desktops, 992px and up)
+$lg: 992px;
+$lg-max: 1199px;
+// Extra large devices (large desktops, 1200px and up)
+$xl: 1200px;
+
 // <Vars />
 
 * {
@@ -44,9 +57,11 @@ body {
 
 // <Header>
 .header {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  @media (min-width: $md-max) {
+    height: 100vh;
+  }
   // <nav>
   &_nav {
     background-color: $primary-color;
@@ -56,6 +71,9 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 1em 0;
+      @media (max-width: $sm) {
+        flex-direction: column;
+      }
       &_logo {
         display: flex;
         align-items: center;
@@ -75,6 +93,9 @@ body {
         display: flex;
         align-content: baseline;
         height: 100%;
+        @media (max-width: $sm) {
+          flex-direction: column;
+        }
         &_phones {
           font-size: 18px;
           line-height: 21.6px;
@@ -115,15 +136,12 @@ body {
         height: 100%;
         color: $dark-color;
         flex-basis: 50%;
-        padding: 4rem;
         &_title {
           font-weight: 700;
           line-height: 55px;
-          font-size: 2.5rem;
         }
         &_subtitle {
           line-height: 30px;
-          font-size: 1.5rem;
         }
         &_advantages {
           &_advantage {
@@ -145,9 +163,47 @@ body {
         }
       }
     }
+    @media (max-width: $sm) {
+      .showcase_inner {
+        &_content {
+          padding: 1rem;
+          &_title {
+            font-size: 1.8rem;
+          }
+          &_subtitle {
+            font-size: 1.5rem;
+            padding: 1rem 0;
+          }
+          &_advantages {
+            &_advantage {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: $sm) {
+      .showcase_inner {
+        &_content {
+          padding: 4rem;
+          &_title {
+            font-size: 2.5rem;
+          }
+          &_subtitle {
+            font-size: 1.5rem;
+          }
+          &_advantages {
+            &_advantage {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
   }
   // <showcase />
 }
+
 // <Header />
 
 // < getPrice >
@@ -162,15 +218,10 @@ body {
     }
     &_form {
       &_inputs {
-        display: flex;
-        justify-content: flex-end;
         padding-bottom: 1.5rem;
         &_input {
           flex-basis: 370px;
           position: relative;
-          &:first-child {
-            margin-right: 30px;
-          }
           &_icon {
             position: absolute;
             right: 2rem;
@@ -187,8 +238,6 @@ body {
         }
       }
       &_submit_wrapper {
-        display: flex;
-        justify-content: flex-end;
         align-items: center;
         &_time {
           display: flex;
@@ -209,6 +258,43 @@ body {
             background-color: #1866af;
             color: $light-color;
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    &_inner {
+      text-align: center;
+      &_form {
+        max-width: 90%;
+        margin: 0 auto;
+        &_inputs {
+          &_input {
+            margin-bottom: 1rem;
+          }
+        }
+        &_submit_wrapper {
+          &_time {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    &_inner {
+      &_form {
+        &_inputs,
+        &_submit_wrapper {
+          display: flex;
+          justify-content: flex-end;
+        }
+        &_inputs {
+          &_input {
+            &:first-child {
+              margin-right: 30px;
+            }
           }
         }
       }
@@ -248,6 +334,17 @@ body {
       }
     }
   }
+  @media (max-width: $sm) {
+    &_inner {
+      &_boxes {
+        flex-direction: column;
+        align-items: center;
+        &_box {
+          padding-bottom: 4rem;
+        }
+      }
+    }
+  }
 }
 // < Wait />
 
@@ -270,9 +367,6 @@ body {
         justify-content: space-between;
         &_field {
           flex: 1;
-          &:nth-child(2n) {
-            margin: 0 30px;
-          }
           input {
             padding: 30px 25px;
             width: 100%;
@@ -307,6 +401,33 @@ body {
       padding-top: 1rem;
     }
   }
+  @media (max-width: $sm) {
+    &_inner {
+      &_formContainer {
+        &_form {
+          flex-direction: column;
+          max-width: 90%;
+          margin: 0 auto;
+          &_field {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    &_inner {
+      &_formContainer {
+        &_form {
+          &_field {
+            &:nth-child(2n) {
+              margin: 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // < Seek />
 
@@ -325,6 +446,17 @@ body {
         font-size: 18px;
         &_desc {
           padding: 2rem 0;
+        }
+      }
+    }
+  }
+  @media (max-width: $sm-max) {
+    &_inner {
+      &_items {
+        display: flex;
+        flex-direction: column;
+        &_item {
+          padding-bottom: 3rem;
         }
       }
     }
@@ -360,8 +492,20 @@ body {
           margin-bottom: 30px;
         }
         &_desc {
-          width: 90%;
+          max-width: 90%;
           margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (max-width: $sm-max) {
+    &_inner {
+      &_proposes {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        &_propose {
+          padding-bottom: 2rem;
         }
       }
     }
@@ -442,6 +586,18 @@ body {
       }
     }
   }
+  @media (max-width: $md-max) {
+    &_inner {
+      &_answers {
+        flex-direction: column;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        &_img {
+        }
+      }
+    }
+  }
 }
 // < QUESTIONS />
 
@@ -456,11 +612,24 @@ body {
     &_items {
       display: flex;
       align-items: center;
-      &_item {
+      &_items {
         &_desc {
           padding-top: 40px;
           max-width: 55%;
           margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    &_inner {
+      &_items {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+        &_item {
+          padding-bottom: 4rem;
         }
       }
     }
@@ -505,6 +674,15 @@ body {
       }
     }
   }
+  @media (max-width: $lg-max) {
+    &_inner {
+      &_slider_wrapper {
+        &_images {
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
 // < WAREHOUSE />
 
@@ -538,6 +716,19 @@ body {
       }
     }
   }
+  @media (max-width: $sm) {
+    &_inner {
+      &_items {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+        &_item {
+          padding-bottom: 4rem;
+        }
+      }
+    }
+  }
 }
 // < SERVICE />
 
@@ -565,7 +756,6 @@ body {
         justify-content: center;
         &_item {
           flex: 1;
-          max-width: 370px;
           input,
           button {
             width: 100%;
@@ -582,14 +772,42 @@ body {
             height: 100%;
             border: none;
           }
-          &:first-child {
-            margin-right: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    &_inner {
+      &_wrapper {
+        &_form {
+          &_item {
+            max-width: 370px;
+            &:first-child {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    &_inner {
+      &_wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+        &_form {
+          flex-direction: column;
+          align-items: center;
+          &_item {
+            width: 100%;
+            padding-bottom: 1rem;
           }
         }
       }
     }
   }
 }
+
 // < CONSULT />
 
 // < COME >
@@ -641,6 +859,14 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+  }
+  @media (max-width: $sm) {
+    &_inner {
+      flex-direction: column;
+      &_copyright {
+        padding: 1rem 0;
+      }
+    }
   }
 }
 // < FOOTER />
