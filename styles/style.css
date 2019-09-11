@@ -1161,6 +1161,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
 }
 
 .warehouse_inner_slider_wrapper_images_image {
@@ -1169,6 +1171,10 @@ body {
           flex: 1;
   -webkit-transition: all 2s;
   transition: all 2s;
+}
+
+.warehouse_inner_slider_wrapper_images_image img {
+  width: 100%;
 }
 
 .warehouse_inner_slider_wrapper_arrow_left {
