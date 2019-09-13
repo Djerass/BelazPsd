@@ -662,9 +662,7 @@ body {
         &_image {
           flex: 1;
           transition: all 2s;
-          img {
-            width: 100%;
-          }
+          img {}
         }
       }
       &_arrow_left {
